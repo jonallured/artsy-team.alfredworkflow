@@ -64,13 +64,32 @@
 	<key>createdby</key>
 	<string>Jon Allured</string>
 	<key>description</key>
-	<string>Artsy Shortcuts</string>
+	<string>Shortcuts for the Artsy Team</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Artsy</string>
+	<string>Team Artsy</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.artsy.net</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>988255CB-BA0F-43BD-83A1-5769A3AEFC34</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -89,25 +108,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>CF3658B5-C0E1-470C-B381-D4F54FD1A9FB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.artsy.net</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>988255CB-BA0F-43BD-83A1-5769A3AEFC34</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -154,6 +154,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://dashboard.heroku.com/apps/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>656DE151-E39E-43CB-BCC4-D465D5F7CFF8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -169,25 +188,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>2DCC4ADC-EFFD-4513-9FC2-7089752FEE74</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://dashboard.heroku.com/apps/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>656DE151-E39E-43CB-BCC4-D465D5F7CFF8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -215,6 +215,8 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
