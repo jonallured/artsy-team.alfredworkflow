@@ -3,9 +3,9 @@
 require 'json'
 
 class Room
-  def initialize(title, url)
+  def initialize(title, room_id)
     @title = title
-    @url = url
+    @url = "http://zoom.us/my/#{room_id}"
   end
 
   def to_json(_)
@@ -27,13 +27,13 @@ class Room
 end
 
 items = [
-  Room.new('Annex', 'http://zoom.us/my/artsyannex'),
-  Room.new('Boardroom', 'http://zoom.us/my/artsyboardroom'),
-  Room.new('Brainstorm', 'http://zoom.us/my/artsybrainstorm'),
-  Room.new('Classroom', 'http://zoom.us/my/artsyclassroom'),
-  Room.new('Den', 'http://zoom.us/my/artsyden'),
-  Room.new('Lab', 'http://zoom.us/my/artsylab'),
-  Room.new('Workshop', 'http://zoom.us/my/artsyworkshop')
+  Room.new('Annex', 'artsyannex'),
+  Room.new('Boardroom', 'artsyboardroom'),
+  Room.new('Brainstorm', 'artsybrainstorm'),
+  Room.new('Classroom', 'artsyclassroom'),
+  Room.new('Den', 'artsyden'),
+  Room.new('Lab', 'artsylab'),
+  Room.new('Workshop', 'artsyworkshop')
 ]
 
 feedback = { items: items }
