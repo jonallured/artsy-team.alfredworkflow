@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>722F6442-CFE4-45E2-B75B-5A757C9A35F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3958A7AB-3F41-406D-93DE-E1B4BF748D15</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CCFBE4E7-10F4-4AF9-9B95-437FAB49D9A0</key>
 		<array>
 			<dict>
@@ -52,6 +39,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>988255CB-BA0F-43BD-83A1-5769A3AEFC34</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F889EACB-18E0-4188-8C79-628D081CAAEC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3958A7AB-3F41-406D-93DE-E1B4BF748D15</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -119,7 +119,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://github.com/artsy/{query}</string>
+				<string>{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -133,23 +133,47 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>ag</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>repos</string>
 				<key>subtext</key>
 				<string></string>
-				<key>text</key>
+				<key>title</key>
 				<string>Artsy GitHub</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>722F6442-CFE4-45E2-B75B-5A757C9A35F1</string>
+			<string>F889EACB-18E0-4188-8C79-628D081CAAEC</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -288,13 +312,6 @@
 			<key>ypos</key>
 			<integer>280</integer>
 		</dict>
-		<key>722F6442-CFE4-45E2-B75B-5A757C9A35F1</key>
-		<dict>
-			<key>xpos</key>
-			<integer>30</integer>
-			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
 		<key>988255CB-BA0F-43BD-83A1-5769A3AEFC34</key>
 		<dict>
 			<key>xpos</key>
@@ -315,6 +332,13 @@
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>20</integer>
+		</dict>
+		<key>F889EACB-18E0-4188-8C79-628D081CAAEC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

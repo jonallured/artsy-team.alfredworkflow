@@ -1,0 +1,40 @@
+#! /usr/bin/env ruby
+
+require 'json'
+
+class Repo
+  def initialize(name)
+    @name = name
+    @url = "https://github.com/artsy/#{name}"
+  end
+
+  def to_json(_)
+    data.to_json
+  end
+
+  private
+
+  def data
+    {
+      arg: @url,
+      autocomplete: @name,
+      subtitle: @url,
+      text: { copy: @url },
+      title: @name,
+      uid: @name
+    }
+  end
+end
+
+items = [
+  Repo.new('bearden'),
+  Repo.new('impulse'),
+  Repo.new('volt'),
+  Repo.new('vibrations'),
+  Repo.new('rosalind'),
+  Repo.new('radiation'),
+]
+
+feedback = { items: items }
+
+print feedback.to_json
