@@ -1,0 +1,36 @@
+#! /usr/bin/env ruby
+
+require 'json'
+
+class Dashboard
+  def initialize(app_id)
+    @title = app_id
+    @url = "https://dashboard.heroku.com/apps/#{app_id}"
+  end
+
+  def to_json(_)
+    data.to_json
+  end
+
+  private
+
+  def data
+    {
+      arg: @url,
+      autocomplete: @title,
+      subtitle: @url,
+      text: { copy: @url },
+      title: @title,
+      uid: @title
+    }
+  end
+end
+
+items = [
+  Dashboard.new('bearden-production'),
+  Dashboard.new('bearden-staging'),
+]
+
+feedback = { items: items }
+
+print feedback.to_json

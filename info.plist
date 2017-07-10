@@ -8,11 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>2DCC4ADC-EFFD-4513-9FC2-7089752FEE74</key>
+		<key>A46DD278-8262-4A25-B7CB-082669A1A8D7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>656DE151-E39E-43CB-BCC4-D465D5F7CFF8</string>
+				<string>169E3E41-B127-41F1-9736-AB5B4784FA6C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -178,40 +178,64 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ah</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>dashboards</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Artsy Heroku Dashboards</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A46DD278-8262-4A25-B7CB-082669A1A8D7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://dashboard.heroku.com/apps/{query}</string>
+				<string>{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>656DE151-E39E-43CB-BCC4-D465D5F7CFF8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>ah</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Heroku Dashboard</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2DCC4ADC-EFFD-4513-9FC2-7089752FEE74</string>
+			<string>169E3E41-B127-41F1-9736-AB5B4784FA6C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -291,10 +315,10 @@
 			<key>ypos</key>
 			<integer>410</integer>
 		</dict>
-		<key>2DCC4ADC-EFFD-4513-9FC2-7089752FEE74</key>
+		<key>169E3E41-B127-41F1-9736-AB5B4784FA6C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>210</integer>
 			<key>ypos</key>
 			<integer>280</integer>
 		</dict>
@@ -305,19 +329,19 @@
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
-		<key>656DE151-E39E-43CB-BCC4-D465D5F7CFF8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>210</integer>
-			<key>ypos</key>
-			<integer>280</integer>
-		</dict>
 		<key>988255CB-BA0F-43BD-83A1-5769A3AEFC34</key>
 		<dict>
 			<key>xpos</key>
 			<integer>210</integer>
 			<key>ypos</key>
 			<integer>20</integer>
+		</dict>
+		<key>A46DD278-8262-4A25-B7CB-082669A1A8D7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>280</integer>
 		</dict>
 		<key>CCFBE4E7-10F4-4AF9-9B95-437FAB49D9A0</key>
 		<dict>
