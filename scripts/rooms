@@ -1,0 +1,12 @@
+#! /usr/bin/env ruby
+
+require 'json'
+require './scripts/item.rb'
+
+base_url = 'http://zoom.us/my/REPLACE'
+filename = 'data/rooms.yml'
+
+items = Item.build_from(filename, base_url)
+
+feedback = { items: items }
+print feedback.to_json

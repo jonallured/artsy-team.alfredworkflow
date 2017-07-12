@@ -1,0 +1,12 @@
+#! /usr/bin/env ruby
+
+require 'json'
+require './scripts/item.rb'
+
+base_url = 'https://github.com/artsy/REPLACE'
+filename = 'data/repos.yml'
+
+items = Item.build_from(filename, base_url)
+
+feedback = { items: items }
+print feedback.to_json
