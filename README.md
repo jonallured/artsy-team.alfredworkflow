@@ -16,7 +16,7 @@ symlink it over to your workflows folder:
 
 ```
 git clone git@github.com:jonallured/team-artsy.alfredworkflow.git team-artsy
-ln -s team-artsy ~/Library/Application\ Support/Alfred \3/Alfred.alfredpreferences/workflows/team-artsy
+ln -s team-artsy ~/Library/Application\ Support/Alfred\ 3/Alfred.alfredpreferences/workflows/team-artsy
 ```
 
 Those commands will clone and name the resulting folder `team-artsy` and then
